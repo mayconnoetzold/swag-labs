@@ -7,6 +7,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "test": "echo \"Error: no test specified\" && exit 1",
     "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
