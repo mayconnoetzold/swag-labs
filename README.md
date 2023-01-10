@@ -62,9 +62,7 @@ Utiliza-se os scripts para geração do relatório de execução dos testes:
 npm run report:mocha
 npm run report:merge
 ```
-* [Acesse aqui o relatório gerado]()
-* [Acesse aqui o GitHubActions deste projeto]()
-
+* [Acesse aqui o relatório gerado](https://mayconnoetzold.github.io/prjSwagLabs/)
 
 ## ✒️ Autores
 * **QA Tester** - *Desenvolvimento do teste automatizado* - [Maycon Noetzold](https://github.com/mayconnoetzold)
