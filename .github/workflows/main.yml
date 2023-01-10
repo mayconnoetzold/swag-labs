@@ -28,7 +28,6 @@ jobs:
       continue-on-error: true
     - run: npm run report:merge
     - run: npm run report:mocha
-    - run: npm report:clean
 
 #   Github pages -> Publicar o relatório
     - name: Deploy to GitHub Pages
