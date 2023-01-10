@@ -1,38 +1,39 @@
 name: Testes
+
 # Gatilhos
 #  Programados
-#  Acionados por eventos
+#   Acionados por eventos
 on:
   push:
     branches: [ "main" ]
     
 jobs:
   build:
-#   Máquina ou ambiente irá executar
+
+# Máquina ou ambiente
     runs-on: ubuntu-latest
 
-#   Passos
+# Passos
     steps:
-#   Download do código    
+# Download do código    
     - uses: actions/checkout@v3
-
-#   Setup da versão do Node
+# Setup da versão do Node
     - name: Use Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 16.x
-        
-#   Instala todas as dependências
+
     - run: npm install
     - run: npm run cy:run
       continue-on-error: true
+      
     - run: npm run report:merge
+    
     - run: npm run report:mocha
-
-#   Github pages -> Publicar o relatório
+# Github Pages -> publicar o relatório
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
-        GITHUB_TOKEN: ${{ secrets.NOETZOLD }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: mochawesome-report
