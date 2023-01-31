@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-01-10T11:46:09.764Z",
-    "end": "2023-01-10T11:46:14.565Z",
-    "duration": 4801,
+    "start": "2023-01-31T13:24:22.319Z",
+    "end": "2023-01-31T13:24:28.176Z",
+    "duration": 5857,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d8b3f225-2803-4315-8dfe-2b6c3e31b73f",
+      "uuid": "ce36fa2c-f806-4639-9853-7e5e91f709b2",
       "title": "",
       "fullFile": "cypress/integration/compras.spec.js",
       "file": "cypress/integration/compras.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4ecf695c-9537-4098-8bfa-18c918b2ebe5",
+          "uuid": "d3135b5c-cdae-444c-ae91-73aa7b40200e",
           "title": "Compras",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Deve ser possível adicionar um item ao carrinho e ir para o checkout",
               "fullTitle": "Compras Deve ser possível adicionar um item ao carrinho e ir para o checkout",
               "timedOut": null,
-              "duration": 4688,
+              "duration": 5685,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.login();\ncy.contains(\"Add to cart\").first().click(); // Assert para verificar se no icone do carrinho foi adicionado um item.\ncy.get(\".shopping_cart_link\").then($cart => {\n  let cart = $cart.text();\n  expect(parseInt(cart)).to.eq(1);\n});\ncy.get(\".shopping_cart_badge\").click();\ncy.get(\"#checkout\").click();\ncy.get(\"#first-name\").type(chance.first());\ncy.get(\"#last-name\").type(chance.last());\ncy.get(\"#postal-code\").type(chance.zip());\ncy.get('[data-test=\"continue\"]').click();\ncy.get('[data-test=\"finish\"]').click();\ncy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER');",
               "err": {},
-              "uuid": "36eab42c-3021-4f6c-b8c4-144aff78b4df",
-              "parentUUID": "4ecf695c-9537-4098-8bfa-18c918b2ebe5",
+              "uuid": "3f89e3a9-62f7-4e06-9889-ae32534ac607",
+              "parentUUID": "d3135b5c-cdae-444c-ae91-73aa7b40200e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "36eab42c-3021-4f6c-b8c4-144aff78b4df"
+            "3f89e3a9-62f7-4e06-9889-ae32534ac607"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4688,
+          "duration": 5685,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
