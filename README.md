@@ -4,7 +4,7 @@ Projeto desenvolvido durante o Chapter V do Cypress Agilizei Bootcamp.
 ## 🚀 Conhecendo o desafio proposto
 A empresa Stark, precisa garantir que as compras em seu site estão funcionando.
 
-O site é um ​ecommerce​, que você pode acessar em: https://www.saucedemo.com/​
+O site é um ​ecommerce​, que você pode acessar em: https://www.saucedemo.com/
 
 Como estratégia, eles decidiram incluir testes de regressão da jornada de compra do usuário como uma de suas rotinas de desenvolvimento. Nessa jornada, o usuário segue basicamente os seguintes passos:
 
